@@ -49,27 +49,39 @@ void disp() {
 
 void keyPressed() {
   char keyType = key;
-  if(keyType == '1') {
-    outSine(55);
-  }else if(keyType == '2') {
-    outSine(110);
-  }else if(keyType == '3') {
-    outSine(220);
-  }else if(keyType == '4') {
-    outSine(440);
-  }else if(keyType == '5') {
-    outSine(880);
-  }else if(keyType == '6') {
-    outSine(1760);  
-  }else if(keyType == '7') {
-    outSine(3520);  
-  }else if(keyType == '8') {
-    outSine(7040);  
-  }else if(keyType == '9') {
-    outSine(14080);
-  }else if(keyType == '0') {
-    whitenoise();
-  }else if(keyType == ' ') {
+  switch(keyType) {
+    case '1':
+      outSine(55);
+      break;
+    case '2':
+      outSine(110);
+      break;
+    case '3':
+      outSine(220);
+      break;
+    case '4':
+      outSine(440);
+      break;
+    case '5':
+      outSine(880);
+      break;
+    case '6':
+      outSine(1760);
+      break;  
+    case '7':
+      outSine(3520);
+      break;  
+    case '8':
+      outSine(7040);
+      break;  
+    case '9':
+      outSine(14080);
+      break;
+    case '0':
+      whitenoise();
+      break;
+  }
+  if(keyType == ' ') {
     if(playing) {
       playStop();
     }else if(type == "sine") {
