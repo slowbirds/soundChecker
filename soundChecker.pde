@@ -50,22 +50,24 @@ void disp() {
 void keyPressed() {
   char keyType = key;
   if(keyType == '1') {
-    outSine(60);
+    outSine(55);
   }else if(keyType == '2') {
-    outSine(220);
+    outSine(110);
   }else if(keyType == '3') {
-    outSine(440);
+    outSine(220);
   }else if(keyType == '4') {
-    outSine(880);
+    outSine(440);
   }else if(keyType == '5') {
-    outSine(1760);  
+    outSine(880);
   }else if(keyType == '6') {
-    outSine(3520);  
+    outSine(1760);  
   }else if(keyType == '7') {
-    outSine(7040);  
+    outSine(3520);  
   }else if(keyType == '8') {
-    outSine(14080);
+    outSine(7040);  
   }else if(keyType == '9') {
+    outSine(14080);
+  }else if(keyType == '0') {
     whitenoise();
   }else if(keyType == ' ') {
     if(playing) {
